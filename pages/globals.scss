@@ -1,0 +1,36 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: radial-gradient(top, ellipse, #D5E242 -222%, black);
+    height: 100vh;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.profileImage {
+    left: auto !important;
+    width: auto !important;
+    min-width: auto !important;
+    @media (max-width: 1280px) {
+        min-height: 70%!important;
+    }
+}
+
+.active {
+    color: #d1e241 !important;
+}
+
+[class^=devicon-], [class*=" devicon-"] {
+    vertical-align: middle;
+}
+
+#tsparticles {
+    position: relative !important;
+}
+
+.particlesCanvas {
+    position: relative !important;
+}

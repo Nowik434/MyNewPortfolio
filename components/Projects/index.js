@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Div1, Div2, Div3, Div4, Div5, Title, Subtitle, Image } from './ProjectsStyle';
 
 
-const MainBar = (props) => {
-    console.log("main bar props", props.pathName)
+const PortfolioBar = (props) => {
     return (
         <Container href={props.pathName} theme={props.theme} animate={{ opacity: 1 }}>
             <Div1>
@@ -24,4 +23,4 @@ const MainBar = (props) => {
     );
 }
 
-export default MainBar;
+export default PortfolioBar;

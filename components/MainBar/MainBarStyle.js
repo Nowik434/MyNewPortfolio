@@ -25,7 +25,12 @@ export const Container = styled(motion.div)`
     transition: all 0.2s ease-out;
     opacity: 0;
     @media ${device.laptop} {
-        grid-row-end: 12;
+        grid-row-end: ${(props) => props.theme.gridRowEndLaptop};
+    }
+    @media ${device.mobile} {
+        grid-column-start: 1;
+        grid-row-end: ${(props) => props.theme.gridRowEndMobile};
+        display: block;
     }
 `;
 
@@ -51,6 +56,9 @@ export const Div2 = styled.div`
     grid-column-end: 2;
     max-height: 420px;
     overflow: hidden;
+    @media ${device.mobile} {
+        display: none;
+    }
 `;
 
 export const Title = styled.h1`
@@ -58,6 +66,10 @@ export const Title = styled.h1`
     font-size: 60px;
     @media ${device.laptop} {
         font-size: 50px;
+    }
+    @media ${device.mobile} {
+        font-size: 30px;
+        text-align: center;
     }
 `;
 

@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 import { device } from '../../components/breakpoints';
 
 export const Container = styled(motion.div)`
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    display: inline-flex;
     grid-template-columns: ${(props) => props.theme.gridTemplateColumns};
     background-color: #212121;
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
     grid-column-start: ${(props) => props.theme.gridColumnStart};
     grid-column-end: ${(props) => props.theme.gridColumnEnd};
-    /* grid-row-start: 21;
-    grid-row-end: 28; */
     grid-row-start: ${(props) => props.theme.gridRowStart};
     grid-row-end: ${(props) => props.theme.gridRowEnd};
     border-radius: 9px;
     opacity: 0;
     @media ${device.laptop} {
-        grid-row-start: ${(props) => props.theme.gridRowStart};
-        grid-row-end: ${(props) => props.theme.gridRowEnd};
+        grid-row-start: ${(props) => props.theme.gridRowStartLaptop};
+        grid-row-end: ${(props) => props.theme.gridRowEndLaptop};
+    }
+    @media ${device.mobile} {
+        grid-column-end: ${(props) => props.theme.gridColumnEndMobile};
+        /* display: block; */
+        display: ${(props) => props.theme.DisplayMobile};
     }
 `;
 
@@ -38,6 +38,9 @@ export const Div = styled.div`
     img {
         @media ${device.laptop} {
         width: 350px;
-    }
-    }      
+        }
+        @media ${device.mobile} {
+            width: 100%;
+        }
+    }   
 `;

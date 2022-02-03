@@ -20,8 +20,12 @@ const Contact = () => {
         map: {
             gridColumnStart: 1,
             gridColumnEnd: 2,
-            gridRowStart: 12,
-            gridRowEnd: 23,
+            gridColumnEndMobile: 7,
+            gridRowStart: 14,
+            gridRowStartMobile: 16,
+            gridRowEnd: 29,
+            gridRowStartLaptop: 12,
+            gridRowEndLaptop: 23,
         }
     };
 

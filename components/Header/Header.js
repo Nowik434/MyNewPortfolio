@@ -5,13 +5,14 @@ import logo from '../../assets/pnlogo.png'
 import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg'
 import { Container, Div1, Div2, Div3, Div4, HeaderSocialLink, ContactButton, ButtonText } from './HeaderStyle';
+import NavbarHamburger from '../../components/NavbarHamburger/NavibarHamburger';
 
 const Header = () => {
     return (
         <Container>
             <Div1>
                 <Link href="/" >
-                    <a style={{ display: 'flex', padding: '5px 30px 5px' }}>
+                    <a >
                         <Image src={logo} alt="" width={'70px'} height={'65px'} />
                     </a>
                 </Link>
@@ -40,6 +41,7 @@ const Header = () => {
                     </a>
                 </ContactButton>
             </Div4>
+            <NavbarHamburger />
         </Container>
     );
 }

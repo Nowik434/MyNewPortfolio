@@ -7,9 +7,11 @@ import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg'
 import { Container, NavItem, NavElement, NavLink } from './NavigationStyle';
 import ActiveLink from '../ActiveLink/ActiveLink';
+import { device } from '../../components/breakpoints';
 
 const Navigation = () => {
     const router = useRouter();
+    console.log(device.mobile)
 
     return (
         <Container>

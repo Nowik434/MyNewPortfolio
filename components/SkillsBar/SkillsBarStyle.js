@@ -8,25 +8,22 @@ export const Container = styled.div`
     background-color: #212121;
     grid-column-start: 1;
     grid-column-end: 7;
-    grid-row-start: 16;
-    grid-row-end: 21;
+    grid-row-start: 14;
+    grid-row-end: 19;
     border-radius: 9px;
     box-sizing: border-box;
-    @media ${device.mobile} {
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(6,1fr);
-    }
     @media ${device.laptop} {
         grid-row-start: 12;
         grid-row-end: 16;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(11,1fr);
     }
-    /* @media ${device.laptopS} {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(6,1fr);
-    } */
-    
+    @media ${device.mobile} {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4,1fr);
+        i {
+        font-size: 40px;
+        padding: 17px;
+    }
+    }
 `;
 
 export const Box1 = styled.div`

@@ -8,17 +8,24 @@ import Footer from '../../components/Footer/Footer';
 import Map from '../../components/Map/Map';
 import { useRouter } from 'next/router';
 
-const Portfolio = () => {
+const MyPortfolio = () => {
     const router = useRouter();
+
+    const theme = {
+        mainBar: {
+            gridRowEnd: 14,
+            gridRowEndLaptop: 12,
+        },
+    }
 
     return (
         <Container>
             <Navigation />
-            <MainBar pathName={router.asPath} />
+            <MainBar theme={theme.mainBar} pathName={router.asPath} />
             <SkillsBar />
             <Projects />
         </Container>
     );
 }
 
-export default Portfolio;
+export default MyPortfolio;

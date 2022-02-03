@@ -13,8 +13,14 @@ export const Container = styled.div`
     grid-row-end: ${(props) => props.theme.gridRowEnd};
     border-radius: 9px;
     @media ${device.laptop} {
-        grid-row-start: ${(props) => props.theme.gridRowStart};
-        grid-row-end: ${(props) => props.theme.gridRowEnd};
+        grid-row-start: ${(props) => props.theme.gridRowStartLaptop};
+        grid-row-end: ${(props) => props.theme.gridRowEndLaptop};
+    }
+    @media ${device.mobile} {
+        grid-row-start: ${(props) => props.theme.gridRowStartMobile};
+        grid-row-end: ${(props) => props.theme.gridRowEndMobile};
+        grid-column-start: ${(props) => props.theme.gridColumnStartMobile};
+        grid-column-end: ${(props) => props.theme.gridColumnEndMobile};
     }
 `;
 

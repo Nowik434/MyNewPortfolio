@@ -5,10 +5,15 @@ export const Form = styled.form`
     display: grid;
     padding: ${(props) => props.theme.padding};
     text-align: center;
+    width: 100%;
     opacity: ${(props) => props.theme.opacity};
     @media ${device.laptop} {
         padding: 15px;
     }
+    @media ${device.mobile} {
+        margin: 22px;
+        width: auto;
+    }   
 `;
 
 Form.defaultProps = {

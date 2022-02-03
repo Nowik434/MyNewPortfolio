@@ -11,24 +11,42 @@ const HomePage = () => {
     const router = useRouter();
 
     const theme = {
-        // map: {
-        //     gridColumnStart: 4,
-        //     gridColumnEnd: 7,
-        //     gridRowStart: 22,
-        //     gridRowEnd: 23,
-        // },
-        // footer: {
-        //     gridColumnStart: 1,
-        //     gridColumnEnd: 4,
-        //     gridRowStart: 22,
-        //     gridRowEnd: 23,
-        // }
+        mainBar: {
+            gridRowStart: 1,
+            gridRowEnd: 14,
+            gridRowEndLaptop: 12,
+            gridTemplateRows: 'repeat(2,1fr)',
+            gridTemplateColumns: 'repeat(6,1fr)',
+        },
+        map: {
+            gridColumnStart: 4,
+            gridColumnEnd: 7,
+            gridRowStart: 19,
+            gridRowEnd: 22,
+            gridRowStartLaptop: 16,
+            gridRowEndLaptop: 18,
+            gridRowStartMobile: 18,
+            gridRowEndMobile: 25,
+            gridColumnStartMobile: 1,
+            gridColumnEndMobile: 7,
+        },
+        footer: {
+            gridColumnStart: 1,
+            gridColumnEnd: 4,
+            gridColumnEndMobile: 7,
+            gridRowStart: 19,
+            gridRowEnd: 22,
+            gridRowStartLaptop: 16,
+            gridRowEndLaptop: 18,
+            DisplayMobile: 'block',
+        }
     };
 
     return (
         <Container>
+
             <Navigation />
-            <MainBar pathName={router.asPath} />
+            <MainBar theme={theme.mainBar} pathName={router.asPath} />
             <SkillsBar />
             <Map theme={theme.map} />
             <Footer theme={theme.footer} />

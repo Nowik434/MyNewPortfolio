@@ -10,16 +10,18 @@ const AboutMe = () => {
 
     const theme = {
         mainBar: {
-            gridRowEnd: 32,
             transition: 'all 2s',
             transform: true,
+            gridRowEnd: 28,
         },
         footer: {
             gridTemplateColumns: '1fr',
             gridColumnStart: 1,
             gridColumnEnd: 2,
-            gridRowStart: 12,
-            gridRowEnd: 23,
+            gridRowStart: 14,
+            gridRowStartLaptop: 12,
+            gridRowEnd: 28,
+            DisplayMobile: 'none',
         }
     };
 

@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import { device } from '../../components/breakpoints';
 
 export const Container = styled.header`
     display: grid;
@@ -16,6 +17,11 @@ export const Container = styled.header`
 export const Div1 = styled.div`
     grid-column-start: 1;
     grid-column-end: 2;
+    display: flex;
+    padding: 5px 30px 5px;
+    @media ${device.mobile} {
+        padding: 12px 5px;
+    }
 `;
 
 export const Div2 = styled.div`
@@ -35,6 +41,9 @@ export const Div4 = styled.div`
     grid-column-start: 6;
     grid-column-end: 6;
     justify-self: center;
+    @media ${device.mobile} {
+        display: none;
+    }
 `;
 
 export const HeaderSocialLink = styled.div`
@@ -42,7 +51,7 @@ export const HeaderSocialLink = styled.div`
 `;
 
 export const ContactButton = styled.button`
-    /* height: 40px; */
+    border: 0px;
     text-align: center;
     width: 160px;
     background-color: #d1e241;

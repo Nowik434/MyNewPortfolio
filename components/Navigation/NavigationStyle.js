@@ -7,10 +7,13 @@ export const Container = styled.div`
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 16;
+    grid-row-end: 14;
     border-radius: 9px;
     @media ${device.laptop} {
         grid-row-end: 12;
+    }
+    @media ${device.mobile} {
+        display: none;
     }
 `;
 

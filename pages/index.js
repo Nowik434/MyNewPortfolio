@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Div1 } from './HomePageStyle';
+// import styled from 'styled-components';
+import { Container, Div1 } from '../pagesStyle/HomePageStyle';
 import Navigation from '../components/Navigation/Navigation'
 import MainBar from '../components/MainBar/MainBar'
 import SkillsBar from '../components/SkillsBar/SkillsBar'
@@ -44,7 +45,6 @@ const HomePage = () => {
 
     return (
         <Container>
-
             <Navigation />
             <MainBar theme={theme.mainBar} pathName={router.asPath} />
             <SkillsBar />
@@ -55,3 +55,13 @@ const HomePage = () => {
 }
 
 export default HomePage;
+
+
+// export const Container = styled.div`
+//     padding: 30px;
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     grid-template-rows: repeat(6, 1fr);
+//     column-gap: 30px;
+//     row-gap: 30px;
+// `;

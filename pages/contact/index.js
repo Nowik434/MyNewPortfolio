@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Div1 } from './ContactStyle';
+import { Container, Div1 } from '../../pagesStyle/ContactStyle';
 import Navigation from '../../components/Navigation/Navigation';
 import Map from '../../components/Map/Map';
 import { useRouter } from 'next/router';

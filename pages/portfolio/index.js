@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Div1 } from './PortfolioStyle';
+import { Container, Div1 } from '../../pagesStyle/PortfolioStyle';
 import Navigation from '../../components/Navigation/Navigation';
 import MainBar from '../../components/MainBar/MainBar';
 import SkillsBar from '../../components/SkillsBar/SkillsBar';

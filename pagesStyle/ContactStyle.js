@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../components/breakpoints';
+import { device } from '../components/breakpoints';
 
 export const Container = styled.div`
     padding: 30px;

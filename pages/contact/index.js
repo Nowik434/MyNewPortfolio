@@ -21,18 +21,18 @@ const Contact = () => {
             opacity: 1,
             fontSize: '40px',
             padding: '14px',
-            Emailinput: {
-                height: '177px',
-                background: '#0000001f',
-                border: 'none',
-                borderBottom: 'none',
-            },
-            Textarea: {
-                height: '177px',
-                background: '#0000001f',
-                border: 'none',
-                borderBottom: 'none',
-            },
+            // Emailinput: {
+            //     height: '177px',
+            //     background: '#0000001f',
+            //     border: 'none',
+            //     borderBottom: 'none',
+            // },
+            // Textarea: {
+            //     height: '177px',
+            //     background: '#0000001f',
+            //     border: 'none',
+            //     borderBottom: 'none',
+            // },
         },
         map: {
             gridColumnStart: 1,

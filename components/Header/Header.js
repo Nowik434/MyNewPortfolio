@@ -6,6 +6,7 @@ import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg'
 import { Container, Div1, Div2, Div3, Div4, HeaderSocialLink, ContactButton, ButtonText } from './HeaderStyle';
 import NavbarHamburger from '../../components/NavbarHamburger/NavibarHamburger';
+import Modal from '../Modal/Modal';
 
 const Header = () => {
     const [isLoaded, setIsLoaded] = React.useState(false);
@@ -41,11 +42,8 @@ const Header = () => {
                 </li>
             </Div3>
             <Div4>
-                <ContactButton>
-                    <a href="/" style={{ listStyleType: 'none', position: 'relative', 'text-decoration': 'none' }}>
-                        <ButtonText>Skontaktuj się</ButtonText>
-                    </a>
-                </ContactButton>
+
+                <Modal />
             </Div4>
             {isLoaded ? <NavbarHamburger /> : null}
         </Container>

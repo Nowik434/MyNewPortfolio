@@ -50,20 +50,5 @@ export const HeaderSocialLink = styled.div`
     
 `;
 
-export const ContactButton = styled.button`
-    border: 0px;
-    text-align: center;
-    width: 160px;
-    background-color: #d1e241;
-    border-radius: 5px;
-    list-style-type: none;
-    text-decoration: none;
-`;
-
-export const ButtonText = styled.p`
-    color:  #212121;
-    text-transform: uppercase;
-    font-weight: 600;
-`;
 
 

@@ -4,13 +4,13 @@ html {
     background: radial-gradient(top, ellipse, #D5E242 -222%, black);
     background-size: cover;
     background-repeat: no-repeat;
-    // height: 100vh;
+    // height: 100%;
 }
 
 body {
     margin: 0px;
     padding: 0px;
-    // height: 100vh;
+    min-height: 100%;
 }
 
 .profileImage {

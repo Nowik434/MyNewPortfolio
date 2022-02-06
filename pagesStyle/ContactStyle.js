@@ -10,16 +10,6 @@ export const Container = styled.div`
     row-gap: 30px;
 `;
 
-// Container.defaultProps = {
-//     theme: {
-//         contactForm: {
-//             opacity: 1,
-//             padding: '120px'
-//         },
-//     }
-// }
-
-
 export const Div1 = styled.div`
     grid-row-start: 1;
     grid-row-end: 29;
@@ -43,3 +33,67 @@ export const Div1 = styled.div`
         grid-template-columns: 1fr;
     }
 `;
+
+
+export const Form = styled.form`
+    display: grid;
+    padding: 33px;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+    @media ${device.laptop} {
+        padding: 15px;
+    }
+    @media ${device.mobile} {
+        margin: 22px;
+        width: auto;
+    }   
+`;
+
+export const EmailInput = styled.input`
+    height: 50px;
+    background: #0000001f;
+    border: none;
+    border-bottom: none;
+    padding: 10px;
+    @media ${device.laptop} {
+        height: 35px;
+    }
+`;
+
+export const Textarea = styled.input`
+    height: 180px;
+    background: #0000001f;
+    border: none;
+    border-bottom: none;
+    padding: 10px;
+    @media ${device.laptop} {
+        height: 35px;
+    }
+`;
+
+export const SubmitButton = styled.button`
+    height: 40px;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #d1e241;
+    border: 0px;
+    border-radius: 5px;
+    @media ${device.laptop} {
+        height: 35px;
+    }
+`;
+
+export const Title = styled.h3`
+    font-size: 40px;
+    color: #d1e241;
+    @media ${device.laptop} {
+        margin: 5px;
+    }
+`;
+
+Title.defaultProps = {
+    theme: {
+        fontSize: '14px',
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Div1 } from '../../pagesStyle/ContactStyle';
+import { useForm, ValidationError } from "@formspree/react";
+import { Container, Div1, EmailInput, Textarea, SubmitButton, Form, Title } from '../../pagesStyle/ContactStyle';
 import Navigation from '../../components/Navigation/Navigation';
 import Map from '../../components/Map/Map';
 import { useRouter } from 'next/router';
@@ -7,6 +8,10 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Contact = () => {
     const router = useRouter();
+    const [state, handleSubmit] = useForm("xpzbanpg");
+    if (state.succeeded) {
+        return <p>Dziękuję za przesłanie wiadomości!</p>;
+    }
 
     const theme = {
         Div1: {
@@ -14,8 +19,20 @@ const Contact = () => {
         },
         contactForm: {
             opacity: 1,
-            padding: '120px',
             fontSize: '40px',
+            padding: '14px',
+            Emailinput: {
+                height: '177px',
+                background: '#0000001f',
+                border: 'none',
+                borderBottom: 'none',
+            },
+            Textarea: {
+                height: '177px',
+                background: '#0000001f',
+                border: 'none',
+                borderBottom: 'none',
+            },
         },
         map: {
             gridColumnStart: 1,
@@ -33,7 +50,18 @@ const Contact = () => {
         <Container>
             <Navigation theme={theme.Div1} />
             <Div1>
-                <ContactForm pathName={router.pathname} theme={theme.contactForm} />
+                {/* <ContactForm pathName={router.pathname} theme={theme.contactForm} /> */}
+                <Form onSubmit={handleSubmit}>
+                    <Title>Napisz do mnie</Title>
+                    <EmailInput id="email" type="email" name="email" placeholder="Adres e-mail" />
+                    <ValidationError prefix="Email" field="email" errors={state.errors} />
+                    <Textarea id="message" name="message" placeholder="Wiadomość" />
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
+                    <SubmitButton type="submit" disabled={state.submitting}>
+                        Wyślij
+                </SubmitButton>
+                    <ValidationError errors={state.errors} />
+                </Form>
             </Div1>
             <Map theme={theme.map} animate={{ opacity: 1 }} />
         </Container>

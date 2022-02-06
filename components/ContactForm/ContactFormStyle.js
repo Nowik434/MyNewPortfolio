@@ -51,6 +51,7 @@ export const SubmitButton = styled.button`
     margin-top: 25px;
     background-color: #d1e241;
     border-radius: 5px;
+    border: 0px;
     @media ${device.laptop} {
         height: 35px;
     }

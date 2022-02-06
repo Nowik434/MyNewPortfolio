@@ -9,10 +9,10 @@ import { StyledBurger, StyledMenu, NavItem, NavLink } from './NavibarHamburgerSt
 import ActiveLink from '../ActiveLink/ActiveLink';
 
 
-const NavibarHamburger = () => {
+const NavibarHamburger = (props) => {
     const router = useRouter();
     const [open, setOpen] = React.useState(false);
-    // const node = React.useRef();
+
 
     return (
         <>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
 import logo from '../../assets/pnlogo.png'
@@ -8,6 +8,12 @@ import { Container, Div1, Div2, Div3, Div4, HeaderSocialLink, ContactButton, But
 import NavbarHamburger from '../../components/NavbarHamburger/NavibarHamburger';
 
 const Header = () => {
+    const [isLoaded, setIsLoaded] = React.useState(false);
+
+    useEffect(() => {
+        setIsLoaded(true);
+    }, [])
+
     return (
         <Container>
             <Div1>
@@ -41,7 +47,7 @@ const Header = () => {
                     </a>
                 </ContactButton>
             </Div4>
-            <NavbarHamburger />
+            {isLoaded ? <NavbarHamburger /> : null}
         </Container>
     );
 }

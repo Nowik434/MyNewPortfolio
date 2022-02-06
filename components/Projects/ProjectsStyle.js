@@ -24,66 +24,66 @@ export const Container = styled(motion.div)`
 `;
 
 export const Div1 = styled.div`
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 1;
-    padding: 50px;
+    margin: 50px;
     align-self: center;
 `;
 
 export const Div2 = styled.div`
+    position: relative;
     grid-column-start: 2;
     grid-column-end: 2;
-    padding: 50px;
+    margin: 50px;
     align-self: center;
 `;
 
 export const Div3 = styled.div`
+    position: relative;
     grid-column-start: 3;
     grid-column-end: 3;
-    padding: 50px;
+    margin: 50px;
     align-self: center;
 `;
 
 export const Div4 = styled.div`
+    position: relative;
     grid-column-start: 4;
     grid-column-end: 4;
-    padding: 50px;
+    margin: 50px;
     align-self: center;
 `;
 
 export const Div5 = styled.div`
+    position: relative;
     grid-column-start: 5;
     grid-column-end: 5;
-    padding: 50px;
+    margin: 50px;
     align-self: center;
 `;
 
-export const Image = styled.img`
+export const ProjectImage = styled.img`
     width: 100%;
     height: 100%;
     z-index: 126;
     display: block;
-    &:after {
-        content: "";
-        background: rgba(228,132,0,0.9);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        display: block;
-        top: 0;
-        right: 0;
-        opacity: 1;
-    }
 `;
 
-// export const Image = styled.div`
-//     background-image: url(${(props) => props.bgImage});
-//     width: 100%;
-//     height: 100%;
-//     z-index: 126;
-//     display: block;
-//     position: relative;
-//     :hover {
-//         opacity: .5;
-//     }
-// `;
+export const Subtitle = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(33 33 33 / 64%);
+    transition: all .5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    :hover {
+        opacity: .5;
+        transition: all .5s;
+    }
+`;

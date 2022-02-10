@@ -17,12 +17,40 @@ const PortfolioBar = (props) => {
                 </Subtitle>
             </Div1>
             <Div2>
+                <ProjectImage
+                    src="/images/vcc.png"
+                    alt="vcc"
+                />
+                <Subtitle>
+                    <Image src={search} alt="Search" width={'70px'} height={'65px'} />
+                </Subtitle>
             </Div2>
             <Div3>
+                <ProjectImage
+                    src="/images/tableshop.png"
+                    alt="vcc"
+                />
+                <Subtitle>
+                    <Image src={search} alt="Search" width={'70px'} height={'65px'} />
+                </Subtitle>
             </Div3>
             <Div4>
+                <ProjectImage
+                    src="/images/insulinoodporni.png"
+                    alt="vcc"
+                />
+                <Subtitle>
+                    <Image src={search} alt="Search" width={'70px'} height={'65px'} />
+                </Subtitle>
             </Div4>
             <Div5>
+                <ProjectImage
+                    src="/images/pgk.png"
+                    alt="vcc"
+                />
+                <Subtitle>
+                    <Image src={search} alt="Search" width={'70px'} height={'65px'} />
+                </Subtitle>
             </Div5>
         </Container>
     );

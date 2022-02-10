@@ -15,6 +15,8 @@ export const ButtonText = styled.p`
     color:  #212121;
     text-transform: uppercase;
     font-weight: 600;
+    padding: 14px;
+    margin: 0px;
 `;
 
 
@@ -57,6 +59,8 @@ export const ModalDialogue = styled.div`
 `;
 
 export const CloseButton = styled.div`
+    height: 45px;
+    width: 45px;
     font-size: 35px;
     background: none;
     outline: none;
@@ -66,7 +70,7 @@ export const CloseButton = styled.div`
     padding: 0;
     position: absolute;
     right: 24px;
-    top: 24px;
+    top: 15px;
     transition: transform 0.25s ease-in-out;
     :hover {
         transform: rotate(90deg);

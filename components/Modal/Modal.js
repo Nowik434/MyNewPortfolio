@@ -3,13 +3,13 @@ import { ContactButton, ButtonText, ReactModal, ModalDialogue, CloseButton } fro
 import ContactForm from '../ContactForm/ContactForm';
 
 const Modal = () => {
+    const [modalActive, setModalActive] = useState(false)
 
     const theme = {
         ContactForm: {
             padding: 0,
         },
     }
-    const [modalActive, setModalActive] = useState(false)
     return (
         <ContactButton>
             <ButtonText onClick={() => setModalActive(!modalActive)}>Skontaktuj się</ButtonText>

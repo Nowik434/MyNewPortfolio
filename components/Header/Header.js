@@ -30,19 +30,18 @@ const Header = () => {
             <Div3>
                 <li style={{ display: 'inline-flex', 'grid-column-gap': '10px' }}>
                     <HeaderSocialLink>
-                        <a href="/" style={{ listStyleType: 'none' }}>
+                        <a href="https://github.com/Nowik434" style={{ listStyleType: 'none' }}>
                             <Image src={github} alt="" width={'40px'} height={'40px'} style={{ color: 'red' }} />
                         </a>
                     </HeaderSocialLink>
                     <HeaderSocialLink>
-                        <a href="/" style={{ listStyleType: 'none' }}>
+                        <a href="https://www.linkedin.com/in/pawe%C5%82-nowicki-602182124/" style={{ listStyleType: 'none' }}>
                             <Image src={linkedin} alt="" width={'40px'} height={'40px'} />
                         </a>
                     </HeaderSocialLink>
                 </li>
             </Div3>
             <Div4>
-
                 <Modal />
             </Div4>
             {isLoaded ? <NavbarHamburger /> : null}

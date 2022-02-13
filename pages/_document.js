@@ -29,7 +29,7 @@ class MyDocument extends Document {
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="apple-touch-icon" href="/icon.png"></link>
-                    <meta name="theme-color" content="#d2e142" />
+                    <meta name="theme-color" content="#212121" />
                 </Head>
                 <body>
                     <Main />

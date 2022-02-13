@@ -37,3 +37,21 @@ body {
 .particlesCanvas {
     position: relative !important;
 }
+
+a[href^="http://maps.google.com/maps"],
+a[href^="https://maps.google.com/maps"],
+a[href^="https://www.google.com/maps"] {
+    display: none !important;
+}
+.gm-bundled-control .gmnoprint {
+    display: block;
+}
+.gmnoprint:not(.gm-bundled-control) {
+    display: none;
+}
+.gm-style-mtc,
+  .gm-svpc,
+  .gm-style-cc,
+  .gm-fullscreen-control {
+    display: none;
+  }

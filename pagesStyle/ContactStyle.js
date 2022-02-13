@@ -34,6 +34,11 @@ export const Div1 = styled.div`
     }
 `;
 
+export const Div2 = styled.div`
+    margin: 50px;
+    align-self: center;
+`;
+
 
 export const Form = styled.form`
     display: grid;

@@ -1,10 +1,12 @@
 import React from 'react';
 import { useForm, ValidationError } from "@formspree/react";
-import { Container, Div1, EmailInput, Textarea, SubmitButton, Form, Title } from '../../pagesStyle/ContactStyle';
+import { Container, Div1, Div2, EmailInput, Textarea, SubmitButton, Form, Title } from '../../pagesStyle/ContactStyle';
 import Navigation from '../../components/Navigation/Navigation';
 import Map from '../../components/Map/Map';
 import { useRouter } from 'next/router';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import Image from 'next/image'
+import Chat from '../../assets/Chat_SVG.svg'
 
 const Contact = () => {
     const router = useRouter();
@@ -59,9 +61,12 @@ const Contact = () => {
                     <ValidationError prefix="Message" field="message" errors={state.errors} />
                     <SubmitButton type="submit" disabled={state.submitting}>
                         Wyślij
-                </SubmitButton>
+                    </SubmitButton>
                     <ValidationError errors={state.errors} />
                 </Form>
+                <Div2>
+                    <Image src={Chat} alt="" width={'470px'} height={'465px'} />
+                </Div2>
             </Div1>
             <Map theme={theme.map} animate={{ opacity: 1 }} />
         </Container>

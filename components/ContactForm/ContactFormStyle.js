@@ -19,7 +19,7 @@ export const Form = styled.form`
 Form.defaultProps = {
     theme: {
         opacity: 1,
-        padding: '33px',
+        padding: '19px 33px',
     }
 }
 

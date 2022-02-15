@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
+// import Script from 'next/script'
 
 class MyDocument extends Document {
 
@@ -24,7 +24,7 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <Script
+                    {/* <Script
                         strategy="afterInteractive"
                         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
                     />
@@ -41,7 +41,7 @@ class MyDocument extends Document {
                     });
                 `,
                         }}
-                    />
+                    /> */}
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />

@@ -36,7 +36,7 @@ class MyDocument extends Document {
                     <meta name="author" content="Paweł Nowicki" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <title>Web Developer - Paweł Nowicki</title>
-                    <meta name="description" content="Web Developer - Paweł Nowicki. Witam! Nazywam sie Paweł Nowicki. Zajmuję tworzeniem aplikacji React. Zapraszam do kontaktu." />
+                    <meta name="description" content="Web Developer- Paweł Nowicki. Witam! Nazywam sie Paweł Nowicki. Zajmuję tworzeniem aplikacji React. Zapraszam do kontaktu." />
                 </Head>
                 <body>
                     <Main />

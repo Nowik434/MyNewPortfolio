@@ -20,11 +20,8 @@ function PortfolioApp(props) {
 
   return (
     <>
-      {/* <GlobalStyle /> */}
-      {/* <ThemeProvider> */}
       <Header />
       <Component {...pageProps} />
-      {/* </ThemeProvider> */}
     </>
   )
 }

@@ -31,6 +31,12 @@ class MyDocument extends Document {
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="apple-touch-icon" href="/icon.png"></link>
                     <meta name="theme-color" content="#212121" />
+                    <meta charset="UTF-8" />
+                    <meta name="keywords" content="Paweł Nowicki, Web Devepoper, strony internetowe, React, Lublin, Javascript, Programista" />
+                    <meta name="author" content="Paweł Nowicki" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>Web Developer - Paweł Nowicki</title>
+                    <meta name="description" content="Web Developer - Paweł Nowicki. Witam! Nazywam sie Paweł Nowicki. Zajmuję tworzeniem aplikacji React. Zapraszam do kontaktu." />
                 </Head>
                 <body>
                     <Main />

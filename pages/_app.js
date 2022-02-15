@@ -1,45 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './globals.scss'
 import Header from '../components/Header/Header';
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import Router from 'next/router';
-
-// const GlobalStyle = createGlobalStyle`
-/* body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-// `
-
-// const theme = {
-//   mainBar: {
-//     bgColor: '#212121',
-//     gridRowEnd: 16,
-//   },
-//   footer: {
-//     bgColor: 'red',
-//     gridTemplateColumns: '1fr',
-//     gridColumnStart: 1,
-//     gridColumnEnd: 2,
-//     gridRowStart: 1,
-//     gridRowEnd: 1,
-//   }
-// }
+import { useRouter } from 'next/router'
+import * as ga from '../lib/ga'
 
 function PortfolioApp(props) {
   const { Component, pageProps } = props;
-  // const [loading, setLoading] = useState(false);
+  const router = useRouter()
 
-
-  // Router.events.on("routeChangeStart", (url) => {
-  //   console.log('start.....')
-  //   setLoading(true);
-  // })
-  // Router.events.on("routeChangeComplete", (url) => {
-  //   console.log('complete')
-  //   setLoading(false);
-  // })
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
   return (
     <>

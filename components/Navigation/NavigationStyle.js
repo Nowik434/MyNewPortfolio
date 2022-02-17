@@ -4,13 +4,11 @@ import { device } from '../../components/breakpoints';
 
 export const Container = styled.div`
     background-color: #212121;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 14;
+    grid-column: 1/2;
+    grid-row: 2/3;
     border-radius: 9px;
     @media ${device.laptop} {
-        grid-row-end: 12;
+        /* grid-row-end: 12; */
     }
     @media ${device.mobile} {
         display: none;
@@ -43,5 +41,6 @@ export const NavLink = styled.div`
     letter-spacing: 1.5px;
     @media ${device.laptop} {
         font-size: 17px;
+        text-align: center;
     }
 `;

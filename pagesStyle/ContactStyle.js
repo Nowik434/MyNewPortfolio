@@ -11,25 +11,19 @@ export const Container = styled.div`
 `;
 
 export const Div1 = styled.div`
-    grid-row-start: 1;
-    grid-row-end: 29;
+    grid-row: 2/7;
+    grid-column: 2/7;
     transition: 'all 2s';
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     background-color: #212121;
-    grid-column-start: 2;
-    grid-column-end: 7;
     border-radius: 9px;
     transition: all 0.2s ease-out;
     opacity: 1;
-    @media ${device.laptop} {
-        grid-row-start: 1;
-        grid-row-end: 23;
-    }
     @media ${device.mobile} {
-        grid-row-end: 16;
-        grid-column-start: 1;
+        grid-row: 2/4;
+        grid-column: 1/7;
         grid-template-columns: 1fr;
     }
 `;
@@ -50,6 +44,7 @@ export const Form = styled.form`
         padding: 15px;
     }
     @media ${device.mobile} {
+        gap: 44px;
         margin: 22px;
         width: auto;
     }   

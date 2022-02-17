@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { motion } from "framer-motion";
 import { device } from '../../components/breakpoints';
 
@@ -7,17 +7,11 @@ export const Container = styled(motion.div)`
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     background-color: #212121;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 19;
-    grid-row-end: 29;
+    grid-row: 4/7;
+    grid-column: 1/7;
     border-radius: 9px;
     transition: all 0.2s ease-out;
     opacity: 0;
-    @media ${device.laptop} {
-        grid-row-start: 16;
-        grid-row-end: 22;
-    }
     @media ${device.mobile} {
         display: block;
     }

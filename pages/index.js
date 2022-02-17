@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Div1 } from '../pagesStyle/HomePageStyle';
 import Navigation from '../components/Navigation/Navigation'
 import MainBar from '../components/MainBar/MainBar'
 import SkillsBar from '../components/SkillsBar/SkillsBar'
@@ -12,44 +11,33 @@ const HomePage = () => {
 
     const theme = {
         mainBar: {
-            gridRowStart: 1,
-            gridRowEnd: 14,
-            gridRowEndLaptop: 12,
+            gridRow: '2/3',
             gridTemplateRows: 'repeat(2,1fr)',
             gridTemplateColumns: 'repeat(6,1fr)',
         },
         map: {
-            gridColumnStart: 4,
-            gridColumnEnd: 7,
-            gridRowStart: 19,
-            gridRowEnd: 22,
-            gridRowStartLaptop: 16,
-            gridRowEndLaptop: 18,
-            gridRowStartMobile: 18,
-            gridRowEndMobile: 25,
-            gridColumnStartMobile: 1,
-            gridColumnEndMobile: 7,
+            gridColumn: '4/7',
+            gridColumnMobile: '1/7',
+            gridRow: '4/7',
+            gridRowMobile: '5/7',
         },
         footer: {
-            gridColumnStart: 1,
-            gridColumnEnd: 4,
-            gridColumnEndMobile: 7,
-            gridRowStart: 19,
-            gridRowEnd: 22,
-            gridRowStartLaptop: 16,
-            gridRowEndLaptop: 18,
+            gridColumn: '1/4',
+            gridColumnMobile: '1/7',
+            gridRow: '4/7',
+            gridRowMobile: '4/5',
             DisplayMobile: 'block',
         }
     };
 
     return (
-        <Container>
+        <>
             <Navigation />
             <MainBar theme={theme.mainBar} pathName={router.asPath} />
             <SkillsBar />
             <Map theme={theme.map} />
             <Footer theme={theme.footer} />
-        </Container>
+        </>
     );
 }
 

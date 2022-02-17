@@ -3,7 +3,6 @@ import { EmailInput, Textarea, SubmitButton, Form, Title } from './ContactFormSt
 
 export default function ContactForm(props) {
     const [state, handleSubmit] = useForm("xpzbanpg");
-    // console.log(props)
     if (state.succeeded) {
         return <p>Dziękuję za przesłanie wiadomości!</p>;
     }
@@ -18,7 +17,7 @@ export default function ContactForm(props) {
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
                 <SubmitButton type="submit" disabled={state.submitting}>
                     Wyślij
-            </SubmitButton>
+                </SubmitButton>
                 <ValidationError errors={state.errors} />
             </Form>
         </>

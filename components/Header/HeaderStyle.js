@@ -4,11 +4,14 @@ import { device } from '../../components/breakpoints';
 
 export const Container = styled.header`
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    grid-column: 1/7;
+    grid-row: 1/1;
+    position: absolute;
+    width: 100%;
+    min-height: 78px;
     background-color: #212121;
-    height: 75px;
-    width: '100%';
-    position: relative;
     top: 0px;
     left: 0px;
     mix-blend-mode: normal;

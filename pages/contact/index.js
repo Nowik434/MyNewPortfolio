@@ -1,10 +1,9 @@
 import React from 'react';
 import { useForm, ValidationError } from "@formspree/react";
-import { Container, Div1, Div2, EmailInput, Textarea, SubmitButton, Form, Title } from '../../pagesStyle/ContactStyle';
+import { Div1, Div2, EmailInput, Textarea, SubmitButton, Form, Title } from '../../pagesStyle/ContactStyle';
 import Navigation from '../../components/Navigation/Navigation';
 import Map from '../../components/Map/Map';
 import { useRouter } from 'next/router';
-import ContactForm from '../../components/ContactForm/ContactForm';
 import Image from 'next/image'
 import Chat from '../../assets/Chat_SVG.svg'
 
@@ -23,36 +22,19 @@ const Contact = () => {
             opacity: 1,
             fontSize: '40px',
             padding: '14px',
-            // Emailinput: {
-            //     height: '177px',
-            //     background: '#0000001f',
-            //     border: 'none',
-            //     borderBottom: 'none',
-            // },
-            // Textarea: {
-            //     height: '177px',
-            //     background: '#0000001f',
-            //     border: 'none',
-            //     borderBottom: 'none',
-            // },
         },
         map: {
-            gridColumnStart: 1,
-            gridColumnEnd: 2,
-            gridColumnEndMobile: 7,
-            gridRowStart: 14,
-            gridRowStartMobile: 16,
-            gridRowEnd: 29,
-            gridRowStartLaptop: 12,
-            gridRowEndLaptop: 23,
+            gridColumn: '1/2',
+            gridRow: '3/7',
+            gridColumnMobile: '1/7',
+            gridRowMobile: '4/7',
         }
     };
 
     return (
-        <Container>
+        <>
             <Navigation theme={theme.Div1} />
             <Div1>
-                {/* <ContactForm pathName={router.pathname} theme={theme.contactForm} /> */}
                 <Form onSubmit={handleSubmit}>
                     <Title>Napisz do mnie</Title>
                     <EmailInput id="email" type="email" name="email" placeholder="Adres e-mail" />
@@ -69,7 +51,7 @@ const Contact = () => {
                 </Div2>
             </Div1>
             <Map theme={theme.map} animate={{ opacity: 1 }} />
-        </Container>
+        </>
     );
 }
 

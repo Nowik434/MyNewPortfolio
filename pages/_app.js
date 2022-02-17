@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 import { useRouter } from 'next/router'
 import Script from 'next/script'
 import * as ga from '../lib/ga'
+import { Container } from '../pagesStyle/HomePageStyle';
 
 function PortfolioApp(props) {
   const { Component, pageProps } = props;
@@ -39,8 +40,10 @@ function PortfolioApp(props) {
           `,
         }}
       />
-      <Header />
-      <Component {...pageProps} />
+      <Container>
+        <Header />
+        <Component {...pageProps} />
+      </Container>
     </>
   )
 }

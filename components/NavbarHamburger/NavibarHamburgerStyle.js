@@ -23,7 +23,6 @@ export const StyledMenu = styled.nav`
   a {
     font-size: 2rem;
     text-transform: uppercase;
-    /* padding: 2rem 0; */
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: #0D0C1D;
@@ -42,8 +41,8 @@ export const StyledMenu = styled.nav`
 `
 
 export const StyledBurger = styled.button`
-  position: fixed;
-  top: 3%;
+  position: absolute;
+  top: 34%;
   right: 3rem;
   display: flex;
   flex-direction: column;

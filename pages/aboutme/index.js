@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Div1 } from '../../pagesStyle/AboutMeStyle';
 import Navigation from '../../components/Navigation/Navigation'
 import MainBar from '../../components/MainBar/MainBar'
 import Footer from '../../components/Footer/Footer';
@@ -12,25 +11,22 @@ const AboutMe = () => {
         mainBar: {
             transition: 'all 2s',
             transform: true,
-            gridRowEnd: 28,
+            gridRow: '2/7',
         },
         footer: {
             gridTemplateColumns: '1fr',
-            gridColumnStart: 1,
-            gridColumnEnd: 2,
-            gridRowStart: 14,
-            gridRowStartLaptop: 12,
-            gridRowEnd: 28,
+            gridColumn: '1/2',
+            gridRow: '3/7',
             DisplayMobile: 'none',
         }
     };
 
     return (
-        <Container>
+        <>
             <Navigation />
             <MainBar pathName={router.asPath} theme={theme.mainBar} />
             <Footer pathName={router.asPath} theme={theme.footer} animate={{ opacity: 1 }} />
-        </Container>
+        </>
     );
 }
 

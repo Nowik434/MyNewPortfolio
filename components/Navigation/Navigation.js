@@ -1,10 +1,5 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import Link from 'next/link';
-import Image from 'next/image'
-import logo from '../../assets/pnlogo.png'
-import github from '../../assets/github.svg'
-import linkedin from '../../assets/linkedin.svg'
 import { Container, NavItem, NavElement, NavLink } from './NavigationStyle';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import { device } from '../../components/breakpoints';
@@ -16,28 +11,28 @@ const Navigation = () => {
     return (
         <Container>
             <NavItem>
-                <ActiveLink activeClassName="active" href="/">
-                    <NavLink onClick={() => router.push('/')}>
+                <ActiveLink onClick={() => router.push('/')} activeClassName="active" href="/">
+                    <NavLink>
                         Strona Główna
                     </NavLink>
                 </ActiveLink>
-                <ActiveLink activeClassName="active" href="/aboutme">
-                    <NavLink onClick={() => router.push('/aboutme')}>
+                <ActiveLink onClick={() => router.push('/aboutme')} activeClassName="active" href="/aboutme">
+                    <NavLink>
                         O Mnie
                     </NavLink>
                 </ActiveLink>
-                <ActiveLink activeClassName="active" href="/technology">
-                    <NavLink onClick={() => router.push('/technology')}>
+                <ActiveLink onClick={() => router.push('/technology')} activeClassName="active" href="/technology">
+                    <NavLink>
                         Technologie
                     </NavLink>
                 </ActiveLink>
-                <ActiveLink activeClassName="active" href="/portfolio">
-                    <NavLink onClick={() => router.push('/portfolio')}>
+                <ActiveLink onClick={() => router.push('/portfolio')} activeClassName="active" href="/portfolio">
+                    <NavLink>
                         Portfolio
                     </NavLink>
                 </ActiveLink>
-                <ActiveLink activeClassName="active" href="/contact">
-                    <NavLink onClick={() => router.push('/contact')}>
+                <ActiveLink onClick={() => router.push('/contact')} activeClassName="active" href="/contact">
+                    <NavLink>
                         Kontakt
                     </NavLink>
                 </ActiveLink>

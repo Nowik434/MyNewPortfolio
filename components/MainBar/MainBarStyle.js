@@ -1,26 +1,14 @@
 import styled, { keyframes } from 'styled-components';
 import { motion } from "framer-motion"
 import { device } from '../../components/breakpoints';
-// const fadeIn = keyframes`
-//   from {
-//     transform: rotate(0deg);
-//   }
-
-//   to {
-//     transform: rotate(360deg);
-//   }
-// `
 
 export const Container = styled(motion.div)`
+    grid-column: 2/7;
+    grid-row: ${(props) => props.theme.gridRow};
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     background-color: #212121;
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    /* grid-row-end: 16; */
-    grid-row-end: ${(props) => props.theme.gridRowEnd};
     border-radius: 9px;
     transition: all 0.2s ease-out;
     opacity: 0;

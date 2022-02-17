@@ -3,24 +3,16 @@ import { device } from '../../components/breakpoints';
 
 export const Container = styled.div`
     background-color: #212121;
-    /* grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 21;
-    grid-row-end: 28; */
-    grid-column-start: ${(props) => props.theme.gridColumnStart};
-    grid-column-end: ${(props) => props.theme.gridColumnEnd};
-    grid-row-start: ${(props) => props.theme.gridRowStart};
-    grid-row-end: ${(props) => props.theme.gridRowEnd};
+    grid-column: ${(props) => props.theme.gridColumn};
+    grid-row: ${(props) => props.theme.gridRow};
     border-radius: 9px;
     @media ${device.laptop} {
         grid-row-start: ${(props) => props.theme.gridRowStartLaptop};
         grid-row-end: ${(props) => props.theme.gridRowEndLaptop};
     }
     @media ${device.mobile} {
-        grid-row-start: ${(props) => props.theme.gridRowStartMobile};
-        grid-row-end: ${(props) => props.theme.gridRowEndMobile};
-        grid-column-start: ${(props) => props.theme.gridColumnStartMobile};
-        grid-column-end: ${(props) => props.theme.gridColumnEndMobile};
+        grid-row: ${(props) => props.theme.gridRowMobile};
+        grid-column: ${(props) => props.theme.gridColumnMobile};
     }
 `;
 

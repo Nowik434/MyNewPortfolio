@@ -6,10 +6,8 @@ export const Container = styled(motion.div)`
     display: inline-flex;
     grid-template-columns: ${(props) => props.theme.gridTemplateColumns};
     background-color: #212121;
-    grid-column-start: ${(props) => props.theme.gridColumnStart};
-    grid-column-end: ${(props) => props.theme.gridColumnEnd};
-    grid-row-start: ${(props) => props.theme.gridRowStart};
-    grid-row-end: ${(props) => props.theme.gridRowEnd};
+    grid-column: ${(props) => props.theme.gridColumn};
+    grid-row: ${(props) => props.theme.gridRow};
     border-radius: 9px;
     opacity: 0;
     @media ${device.laptop} {
@@ -17,8 +15,8 @@ export const Container = styled(motion.div)`
         grid-row-end: ${(props) => props.theme.gridRowEndLaptop};
     }
     @media ${device.mobile} {
-        grid-column-end: ${(props) => props.theme.gridColumnEndMobile};
-        /* display: block; */
+        grid-column: ${(props) => props.theme.gridColumnMobile};
+        grid-row: ${(props) => props.theme.gridRowMobile};
         display: ${(props) => props.theme.DisplayMobile};
     }
 `;

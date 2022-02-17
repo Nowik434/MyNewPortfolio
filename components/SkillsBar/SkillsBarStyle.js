@@ -2,19 +2,17 @@ import styled from 'styled-components';
 import { device } from '../../components/breakpoints';
 
 export const Container = styled.div`
+    grid-column: 1/7;
+    grid-row: 3/3;
     display: grid;
+    height: 110px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto;
     background-color: #212121;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 14;
-    grid-row-end: 19;
     border-radius: 9px;
     box-sizing: border-box;
     @media ${device.laptop} {
-        grid-row-start: 12;
-        grid-row-end: 16;
+        height: 100%;
     }
     @media ${device.mobile} {
         grid-template-rows: repeat(3, 1fr);

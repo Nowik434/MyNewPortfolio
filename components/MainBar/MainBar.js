@@ -5,7 +5,6 @@ import image from '../../assets/pn.png'
 
 const MainBar = (props) => {
 
-    console.log("main bar props", props.pathName)
     return (
         <Container href={props.pathName} theme={props.theme} animate={{ opacity: 1 }}>
             {props.pathName === '/' ? (

@@ -9,7 +9,7 @@ const Footer = ({ theme, pathName }) => {
             {pathName !== '/aboutme' ? (
                 <Div>
                     <a href="https://github.com/Nowik434">
-                        <img align="center" src="https://github-readme-stats.vercel.app/api?username=nowik434&show_icons=true&bg_color=212121&icon_color=d1e241&text_color=d1e241&border_color=212121&title_color=d1e241" />
+                        <img alt="github skills" align="center" src="https://github-readme-stats.vercel.app/api?username=nowik434&show_icons=true&bg_color=212121&icon_color=d1e241&text_color=d1e241&border_color=212121&title_color=d1e241" />
                     </a>
                 </Div>
             ) : null}

@@ -1,4 +1,5 @@
 const withPWA = require("next-pwa");
+const path = require('path')
 
 module.exports = withPWA({
   pwa: {
@@ -7,16 +8,8 @@ module.exports = withPWA({
     skipWaiting: true,
     swSrc: 'sw.js',
   },
-});
-
-module.exports = {
   reactStrictMode: false,
-}
-
-const path = require('path')
-
-module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-}
+});

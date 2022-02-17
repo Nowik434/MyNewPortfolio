@@ -6,7 +6,6 @@ import { device } from '../../components/breakpoints';
 
 const Navigation = () => {
     const router = useRouter();
-    console.log(device.mobile)
 
     return (
         <Container>

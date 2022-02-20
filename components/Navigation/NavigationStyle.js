@@ -7,9 +7,6 @@ export const Container = styled.div`
     grid-column: 1/2;
     grid-row: 2/3;
     border-radius: 9px;
-    @media ${device.laptop} {
-        /* grid-row-end: 12; */
-    }
     @media ${device.mobile} {
         display: none;
     }
@@ -24,14 +21,6 @@ export const NavItem = styled.ul`
     margin: 0;
 `;
 
-export const NavElement = styled.li`
-    justify-self: center;
-    color: red;
-    list-style: none;
-    padding: 8px 16px;
-    border: 2px solid #ffffff14;
-    border-radius: 25px;
-`;
 
 export const NavLink = styled.div`
     color: #fff;

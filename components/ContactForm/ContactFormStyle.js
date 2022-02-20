@@ -10,6 +10,9 @@ export const Form = styled.form`
     @media ${device.laptop} {
         padding: 15px;
     }
+    @media ${device.laptopS} {
+        padding: 0px;
+    }
     @media ${device.mobile} {
         margin: 22px;
         width: auto;
@@ -53,6 +56,13 @@ export const SubmitButton = styled.button`
     border-radius: 5px;
     border: 0px;
     @media ${device.laptop} {
+        height: 35px;
+    }
+    @media ${device.laptopS} {
+        margin-top: 0px;
+        height: 25px;
+    }
+    @media ${device.mobile} {
         height: 35px;
     }
 `;

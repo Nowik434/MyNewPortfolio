@@ -13,11 +13,11 @@ export const Container = styled(motion.div)`
     transition: all 0.2s ease-out;
     opacity: 0;
     @media ${device.laptop} {
-        grid-row-end: ${(props) => props.theme.gridRowEndLaptop};
+        /* grid-row-end: ${(props) => props.theme.gridRowEndLaptop}; */
     }
     @media ${device.mobile} {
         grid-column-start: 1;
-        grid-row-end: ${(props) => props.theme.gridRowEndMobile};
+        /* grid-row-end: ${(props) => props.theme.gridRowEndMobile}; */
         display: block;
     }
 `;
@@ -44,6 +44,7 @@ export const Div2 = styled.div`
     grid-column-end: 2;
     max-height: 420px;
     overflow: hidden;
+    align-self: center;
     @media ${device.mobile} {
         display: none;
     }

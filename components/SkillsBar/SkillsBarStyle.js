@@ -5,7 +5,7 @@ export const Container = styled.div`
     grid-column: 1/7;
     grid-row: 3/3;
     display: grid;
-    height: 110px;
+    min-height: 110px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto;
     background-color: #212121;

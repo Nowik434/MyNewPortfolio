@@ -37,6 +37,9 @@ export const Div = styled.div`
         @media ${device.laptop} {
         width: 350px;
         }
+        @media ${device.laptopS} {
+        width: 300px;
+        }
         @media ${device.mobile} {
             width: 100%;
         }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Div1, Div2, Title, Subtitle } from './MainBarStyle';
 import Image from 'next/image';
 import image from '../../assets/pn.png'
+import Development from '../../assets/app_development_SVG.svg'
 
 const MainBar = (props) => {
 
@@ -33,14 +34,15 @@ const MainBar = (props) => {
                         <Subtitle>Projekty tworzę głównie z wykorzystaniem biblioteki React i frameworka Next.js. </Subtitle>
                     </Div1>
                     <Div2>
-                        {/* <Image
-                            src={image}
-                            alt="Zdjęcie profilowe"
-                            layout="fill"
-                            objectFit="contain"
-                            width={100}
+                        <Image
+                            src={Development}
+                            alt="Technologie"
+                            height={300}
+                            width={300}
+                            margin
                             className="profileImage"
-                        /> */}
+                            style={{ margin: '20px' }}
+                        />
                     </Div2>
                 </>
             ) : null}

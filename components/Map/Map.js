@@ -192,7 +192,13 @@ const RegularMap = withScriptjs(
             defaultCenter={defaultCenter}
             defaultOptions={defaultOptions}
         >
-            <Marker position={defaultCenter} />
+            <Marker
+                position={defaultCenter}
+                icon={{
+                    url: 'http://localhost:3000/mapsMarker.png',
+                    // anchor: new google.maps.Point(5, 58),
+                }}
+            />
         </GoogleMap>
     ))
 );

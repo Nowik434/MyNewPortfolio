@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 import { device } from '../components/breakpoints';
+import { motion } from "framer-motion"
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     column-gap: 30px;
     row-gap: 30px;
+    transition: all 0.2s ease-out;
+    opacity: 0;
 `;
 
 export const Div1 = styled.div`

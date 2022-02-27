@@ -44,7 +44,7 @@ export const Div2 = styled.div`
     grid-column-end: 2;
     max-height: 420px;
     overflow: hidden;
-    align-self: center;
+    /* align-self: center; */
     @media ${device.mobile} {
         display: none;
     }

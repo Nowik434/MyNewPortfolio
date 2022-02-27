@@ -33,7 +33,7 @@ const MainBar = (props) => {
                         <Title>Wykorzystywane technologie</Title>
                         <Subtitle>Projekty tworzę głównie z wykorzystaniem biblioteki React i frameworka Next.js. </Subtitle>
                     </Div1>
-                    <Div2>
+                    <Div2 style={{ alignSelf: 'center' }}>
                         <Image
                             src={Development}
                             alt="Technologie"

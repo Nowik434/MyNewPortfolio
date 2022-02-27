@@ -13,6 +13,7 @@ const AboutMe = () => {
             transition: 'all 2s',
             transform: true,
             gridRow: '2/3',
+            alignSelf: 'center',
         },
     };
 

@@ -14,6 +14,7 @@ const HomePage = () => {
             gridRow: '2/3',
             gridTemplateRows: 'repeat(2,1fr)',
             gridTemplateColumns: 'repeat(6,1fr)',
+            alignSelf: 'auto',
         },
         map: {
             gridColumn: '4/7',

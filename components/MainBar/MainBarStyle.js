@@ -40,11 +40,9 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
     position:relative;
     right: 0;
-    grid-column-start: 2;
-    grid-column-end: 2;
     max-height: 420px;
     overflow: hidden;
-    /* align-self: center; */
+    align-self: ${(props) => props.theme.alignSelf};
     @media ${device.mobile} {
         display: none;
     }

@@ -28,7 +28,7 @@ const MainBar = (props) => {
               objectFit="contain"
               width={100}
               className="profileImage"
-              style={{ top: "unset !important" }}
+              style={{ top: "unset" }}
             />
           </Div2>
         </>

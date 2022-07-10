@@ -10,11 +10,11 @@ export const Container = styled.div`
   gap: 30px;
   box-sizing: border-box;
   @media ${device.tablet} {
-    min-height: 100%;
+    min-height: 100% !important;
   }
   @media ${device.mobile} {
     grid-template-columns: repeat(6, 1fr);
     height: auto;
-    min-height: 100%;
+    min-height: 100% !important;
   }
 `;

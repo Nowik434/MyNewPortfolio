@@ -35,14 +35,7 @@ Container.defaultProps = {
 export const Div = styled.div`
   align-self: center;
   img {
-    @media ${device.laptop} {
-      width: 350px;
-    }
-    @media ${device.laptopS} {
-      width: 300px;
-    }
-    @media ${device.mobile} {
-      width: 100%;
-    }
+    width: 100%;
+    height: auto;
   }
 `;
